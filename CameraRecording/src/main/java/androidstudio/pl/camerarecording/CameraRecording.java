@@ -45,7 +45,7 @@ public class CameraRecording extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.setContentView(R.layout.activity_camera_recording);
-        numbersOfCamera = Camera.getNumberOfCameras();
+        this.numbersOfCamera = Camera.getNumberOfCameras();
 
         final SurfaceView surfaceViewCamera = (SurfaceView) findViewById(R.id.surfaceViewCamera);
 
