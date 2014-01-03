@@ -321,7 +321,7 @@ public class CameraRecording extends Activity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Log.d(TAG_LOG, "onPause");
+        Log.d(TAG_LOG, "onBackPressed");
         relaseMediaRecorder();
         System.exit(0);
     }
