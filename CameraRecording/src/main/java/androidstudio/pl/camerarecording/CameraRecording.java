@@ -271,11 +271,6 @@ public class CameraRecording extends Activity {
 
         @Override
         public void surfaceCreated(SurfaceHolder surfaceHolder) {
-
-        }
-
-        @Override
-        public void surfaceChanged(SurfaceHolder surfaceHolder, int format, int w, int h) {
             try {
                 camera = getCameraInstance();
                 camera.setPreviewDisplay(surfaceHolder);
@@ -283,6 +278,11 @@ public class CameraRecording extends Activity {
             } catch (IOException e) {
                 Log.e(TAG_LOG, "Error startPreview()");
             }
+        }
+
+        @Override
+        public void surfaceChanged(SurfaceHolder surfaceHolder, int format, int w, int h) {
+
         }
 
         @Override
