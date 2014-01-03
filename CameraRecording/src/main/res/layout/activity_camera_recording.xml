@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <SurfaceView
+        android:id="@+id/surfaceViewCamera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/textViewRecordingInfo"
+        android:textColor="#ff0000"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/startRecording"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/recording" />
+
+            <Button
+                android:id="@+id/stopRecording"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/skip" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/tvvideolenght" />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/uri" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/editTextVideoLenght"
+                android:inputType="numberSigned"
+                android:layout_weight="1"
+                android:maxLength="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/videolenght" />
+
+            <EditText
+                android:maxLength="10"
+                android:id="@+id/editTextVideoName"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/videoname"
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/switchCamera"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/switchcamera" />
+
+            <Button
+                android:id="@+id/previewVideo"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/previewvideo" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

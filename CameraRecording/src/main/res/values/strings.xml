@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Camera Recording</string>
+    <string name="recording">Start</string>
+    <string name="skip">Stop</string>
+    <string name="videolenght">5</string>
+    <string name="videoname">VID_name</string>
+    <string name="switchcamera">Zmień kamerę</string>
+    <string name="previewvideo">Zobacz nagrania</string>
+    <string name="uri">/sdcard/Pictures/Videos/</string>
+    <string name="tvvideolenght">Długość nagrania (s)</string>
+
+</resources>
